@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #F8F8FF;
+}
+h1,h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+h3,h4,h5{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+h6,p{
+	font-family: 'Mulish', sans-serif;
+	font-weight: 300;
+}
+body{
+	background: #2C2D34;
+}
+.header{
+	width: 100%;
+	height: auto;
+	padding: 2rem;
+}
+.first-head{
+	width: 100%;
+	height: 6vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.second-head{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	padding: 2rem 0 0rem 0;
+}
+.second-head button{
+	padding: 0.5rem 1.3rem;
+	border: 1px solid #F8F8FF;
+	border-radius: 20px;
+	background: none;
+	margin: 0.5rem 1rem;
+	cursor: pointer;
+}
+.logo{
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+.search-bar{
+	padding: 0.6rem 1.3rem;
+	border: 1px solid #F8F8FF;
+	outline: none;
+	background: none;
+	border-radius: 20px;
+}
+.search-button{
+  padding: 0.5rem 0.6rem;
+  border: 1px solid white;
+  background: none;
+  border-radius: 20px;
+}
+.main-container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem 2rem;
+}
+.main-container div{
+	width: 15%;
+	height: 25vh;
+	margin: 1rem 1.5rem;
+	cursor: pointer;
+}
+.main-container div img{
+	width: 100%;
+	height: 80%;
+}
+.main-container div h2{
+	font-size: 0.9rem;
+}
+.page-buttons{
+	width: 100%;
+	height: 5vh;
+	display: inline-block;
+	padding:0 3rem;
+}
+.page-buttons button{
+	padding: 0.4rem 0.8rem;
+	background: transparent;
+	border: 1px solid #F8F8FF;
+	cursor: pointer;
+}
+.movie-head{
+	width: 100%;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+.movie-head div{
+  cursor: pointer;
+}
+.movie-content{
+	width: 100%;
+	height: auto;
+}
+.background{
+	width: 100%;
+	height: 40vh;
+	z-index: 2;
+}
+.background img{
+	width: 100%;
+	height: 100%;
+}
+.movie-profile{
+	width: 100%;
+	height: auto;
+	z-index: 3;
+}
+.first-profile{
+	width: 100%;
+	height: auto;
+	padding: 1.5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.first-profile div{
+	width: 20%;
+	height: 30vh;
+	margin-top: -15%;
+}
+.first-profile div img{
+	width: 100%;
+	height: 100%;
+}
+.second-profile{
+	width: 100%;
+	height: auto;
+	padding: 2rem;
+}
+.second-profile p{
+	max-width: 70%;
+	margin-top: 0.5rem;
+}
+.second-profile h3{
+	margin: 0.5rem 0 1rem 0;
+}
+.second-profile a{
+  word-break: break-all;
+}
+.screenshots{
+	display: flex;
+	height: 25vh;
+	max-width: 100%;
+	align-items: center;
+	justify-content: start;
+	overflow: auto;
+}
+.screenshots img{
+	margin-right: 1.5rem;
+	min-width: 20%;
+	height: 100%;
+}
+.active{
+  color: red;
+}
+
+@media screen and (max-width: 475px){
+	.header{
+		padding: 1rem;
+	}
+	.logo{
+	  font-size: 1rem;
+	}
+	.search-bar{
+	  width: 60%;
+	  margin: 0 1rem;
+	}
+	.first-head{
+		height: 4vh;
+	}
+	.second-head button{
+		margin: 0.5rem;
+	}
+	.main-container{
+		padding: 1rem 0.7rem;
+	}
+	.main-container div{
+		width: 44%;
+		height: 30vh;
+		margin: 0.5rem;
+	}
+	.page-buttons{
+		padding: 0 0.9rem;
+	}
+	.page-buttons button{
+		margin: 0.5rem;
+	}
+	.first-profile div{
+		margin-top: -30%;
+		width: 50%;
+	}
+	.second-profile{
+	  padding: 1rem;
+	}
+	.second-profile p{
+		max-width: 100%;
+	}
+	.screenshots img{
+		min-width: 40%;
+	}
+}
